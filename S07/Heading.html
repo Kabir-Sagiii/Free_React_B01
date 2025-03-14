@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="sagar"></div>
+
+    <script type="text/babel">
+      const h1 = <h1> Heading - 1 in React with JSX Element</h1>;
+      const h2 = <h2> Heading - 2 in React with JSX </h2>;
+      const h3 = <h3>Heading - 3 in React with JSX</h3>;
+
+      const image = (
+        <img
+          src="https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d"
+          width="300"
+          height="300"
+        />
+      );
+
+      const p = (
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          pariatur minima facilis quisquam officia ullam soluta voluptate vitae
+          aspernatur sapiente corrupti necessitatibus, labore ex dolorem. Ipsam
+          ducimus deleniti molestiae, totam esse asperiores vero eius sint amet
+          error quod nulla quasi numquam, accusamus quas? Maxime voluptatem
+          officiis expedita, sed minus dolor.{" "}
+        </p>
+      );
+
+      ReactDOM.render([h1, h2, h3, image], document.getElementById("sagar"));
+    </script>
+  </body>
+</html>

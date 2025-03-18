@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var container = (
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+          corporis?
+        </div>
+      );
+
+      var h2 = <h2> h2 element in jsx </h2>;
+
+      ReactDOM.render(
+        [container, h2, h2, container],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

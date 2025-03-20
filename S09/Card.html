@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        height: 370px;
+        box-shadow: 0 0 10px red;
+        text-align: center;
+      }
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function card(username, image) {
+        return (
+          <div id="card">
+            <img src={image} width="270" height="270" />
+            <h3> {username} </h3>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <div id="container">
+          {card(
+            "John",
+            "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d"
+          )}
+          {card(
+            "Raj",
+            "https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+          )}
+          {card(
+            "Kabir",
+            "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg"
+          )}
+          {card(
+            "Sagar",
+            "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1"
+          )}
+        </div>,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

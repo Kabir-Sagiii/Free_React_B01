@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        height: 370px;
+        box-shadow: 0 0 10px red;
+        text-align: center;
+      }
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var card = (
+        <div id="card">
+          <img
+            src="https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d"
+            width="270"
+            height="270"
+          />
+          <h3> John Chris </h3>
+        </div>
+      );
+      ReactDOM.render(
+        <div id="container">
+          {card}
+          {card}
+          {card}
+          {card}
+        </div>,
+        document.getElementById("root")
+      );
+      //   ReactDOM.render([card, card,card,card], document.getElementById("root"));
+    </script>
+  </body>
+</html>
